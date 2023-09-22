@@ -53,25 +53,23 @@
         <img src="{% static  'assets/img/hero-bg2.jpg'  %}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Shaolin Aman</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100008766879585" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/zannatul-shaolin-a88627263/" class="linkedin" target="_blank"  ><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="twitter text-info"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100008766879585" class="facebook text-primary" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="instagram text-danger" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype text-info"></i></a>
+          <a href="https://www.linkedin.com/in/zannatul-shaolin-a88627263/" class="linkedin text-info" target="_blank"  ><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="/" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="about/" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="portfolio/" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Portfolio</span></a></li>
-          <li><a href="blog/" class="nav-link scrollto"><i class="fa-solid fa-blog"></i> <span>Blog</span></a></li>
-          <li><a href="auth/signup/" class="nav-link scrollto"><i class="fa fa-sign-in"></i> <span>Sign Up</span></a><li><a href="auth/login/" class="nav-link scrollto"><i class="fa fa-sign-in"></i> <span>Log In</span></a></li>
-          <li><a href="auth/logout/" class="nav-link scrollto"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a></li>
-         </li>
-         <li><a href="contact/" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          <li><a href="internshipdetails/" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Internship Form</span></a></li>
+          <li><a href="{% url 'about' %}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="{% url 'services' %}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Services</span></a></li>
+          <li><a href="{% url 'mywork' %}" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>My Work</span></a></li>
+          <li><a href="{% url 'skills' %}" class="nav-link scrollto"><i class="fa-solid fa-blog"></i> <span>Skills</span></a></li>
+         <li><a href="{% url 'contact' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          
           
         </ul>
       </nav><!-- .nav-menu -->
@@ -108,7 +106,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Shaolin</a>
+        Designed by <a href="https://shaolinaman.com/">Shaolinaman</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
